@@ -1,5 +1,7 @@
-## Covid-Info/Help
-Covid-info/help is a website that serves two main purposes. Firstly it's an information site on Covid-19. It displays real time statistics of the world(country-wise) and India(state-wise and district-wise) regarding Covid-19 situation. Users can also get information about Covid-19 testing centers, helpline-nos, NGO's, Hospitals, etc. available in various cities of India. The website also has a unique news feature that renders 10 latest news related to Covid-19 of the place entered by the user. A mini Covid-19 risk checker facility is also provided.
+# Covid-Info/Help
+
+Covid-Info/Help is a website that serves two main purposes. Firstly it's an information site on Covid-19. It displays real time statistics of the world(country-wise) and India(state-wise and district-wise) regarding Covid-19 situation. Users can also get information about Covid-19 testing centers, helpline-nos, NGO's, Hospitals, etc. available in various cities of India. The website also has a unique news feature that renders 10 latest news related to Covid-19 of the place entered by the user. A mini Covid-19 risk checker facility is also provided.
+
 
 Secondly, through Covid-help website small business shops can accept orders online. This facility serves two purposes :
    1. Buyers : Since customers are unable to move out of their houses during
@@ -198,19 +200,20 @@ The project also uses Maps api of mapmyindia.org to render maps
 
 ## Challenges we ran into
 
-1. **Finding the right APIs :** Our first challenge was to find suitable APIs that would render data for our Covid-info website. It took was quite some time but we managed to find a website that had multiple APIs rendering Covid-19 related information in JSON format. It was then easier for us to parse the JSON data into javascript object.
+1. **Finding the right APIs :** Our first challenge was to find suitable APIs that would render data for our Covid-info website. It took us some time but we managed to find a website that had multiple APIs rendering Covid-19 related information in JSON format. It was then easier for us to parse the JSON data into javascript object.
 
-2. **Making choropleth maps with SVG and d3.js :** We thought of incorporating choropleth maps in our website for better visualisation of Covid-19 situation. Being new to web development we had absolutely no idea how to go about it. After going through several articles on *stackoverflow.com* we learnt *d3.js* library could be useful to us. *d3.js* is a javascript library that helps you bring data to life using HTML, SVG, and CSS. But using the library and understanding its usage was very chalenging. Also to render our map we needed *topojson* data of the world. Thanks to this great tutorial on [YouTube](https://www.youtube.com/watch?v=045-bsOsbJc) which made our learning process easier.
+2. **Making choropleth maps with SVG and d3.js :** We thought of incorporating choropleth maps in our website for better visualisation of Covid-19 situation. Being new to web development we had absolutely no idea how to go about it. After going through several articles on *stackoverflow.com* we learnt *d3.js* library could be useful to us. *d3.js* is a javascript library that helps you bring data to life using HTML, SVG, and CSS. But using the library and understanding its usage was very challenging. Also to render our map we needed *topojson* data of the world. Thanks to this great tutorial on [YouTube](https://www.youtube.com/watch?v=045-bsOsbJc) which made our learning process easier.
 
-3. **Web scrapping dynamic data :**  Building of the Covid-19 news scrapper was very challenging for us. We had never done web scrapping before. After going through several tutorials we successfully used *request.js* and *cheerio.js* to scrap data from a website. But our task was to build a news scrapper whose data constanly gets updated with time. After a lot of research we learnt that the previous tools could scrape only static data. We then took help of *puppeteer.js* which is headless chrome browser suitable for scrapping dynamic data.
+3. **Web scrapping dynamic data :**  Building of the Covid-19 news scrapper was a difficult task for us. We had never done web scrapping before. After going through several tutorials we successfully used *request.js* and *cheerio.js* to scrap data from a website. But our task was to build a news scrapper whose data constantly gets updated with time. After a lot of research we learnt that the previous tools could scrape only static data. We then took help of *puppeteer.js* which is headless chrome browser suitable for scrapping dynamic data.
 
 4. **Problem of using Google maps API from India :**  In our online grocery store project, for ease of identification and navigation to shops we wanted to add a maps feature. Our first choice was google maps API. In order to use the API we needed to set-up a payment method with a recurring-transaction allowable credit card. Also for Indian users google does not accept debit cards. Since we could not setup a payment method we had a hard time in finding a suitable free maps API. Thats when we found 
 [mapmyindia APIs](https://www.mapmyindia.com/api/). This API provides accurate mapping functionalities, with some additional features to google maps and has a user friendly documentation.
 
-5. **Interchange of data in MongoDB :**  In our online grocery store project we had a very difficult time in interchanging data in our mongodb database. Our task was to make it easier for shopkeepers to maintain the record of orders under *New Orders*, *Payment Pending* and *Completed* categories. With click the user must be able to transfer the order from *New Orders* to *Payment Pending* category. To overcome this problem we had to redesign the schema of our orders model keeping all the above categories as separate from one another. This helped in proper transfer of data. 
+5. **Interchange of data in MongoDB :**  In our online grocery store project we had a very difficult time in interchanging data in our mongodb database. Our task was to make it easier for shopkeepers to maintain the record of orders under *New Orders*, *Payment Pending* and *Completed* categories. With one click the user must be able to transfer the order from *New Orders* to *Payment Pending* category. To overcome this problem we had to redesign the schema of our orders model keeping all the above categories as separate from one another. This helped in proper transfer of data. 
 
 6. **Using authentication feature :** This was one of the most important features of our grocery project. We had to ensure no two users can have same username, each shop is identified by a unique id, users cannot place online orders without logging in and so on.  For this we used  passport.js library which provides simple, unobtrusive authentication for Node.js. Also its great documentation helped us incorporate it properly in our project.
 
+7. **Non-availability of members at one location :** Due to current Covid-19 crisis our team was working on this project from three different locations. This was quite difficult in many occasions but still we coordinated well with each other. We were constantly in touch with each other over phone and updated the developments of our project on GitHub.
 
 
 
@@ -248,5 +251,6 @@ If you'd like to contribute, please fork the repository and make changes as you'
    * [COVID-19 REST API for India](https://github.com/amodm/api-covid19-in) for providing opensource APIs related to Covid-19 information and helping thousands of developers.
 
 
+#### Developed by : HyperText Coders
 
 

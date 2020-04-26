@@ -12,7 +12,6 @@
 	 #mainNavbar .nav-link:hover{
             color: #001ee0;
         }
-
         .navbar-dark .navbar-nav .nav-link{
             color: white;
         }
@@ -228,7 +227,6 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 	<script type="text/javascript">
-
 		function validate()
 		{
 			var x=document.form1.age.value;
@@ -237,9 +235,7 @@
 			else
 			check();
 		}
-
 		function check() {
-
 			var a=document.getElementById("fever-temp").checked;
 			var b=document.getElementById("highfever-temp").checked;
 			var c=document.getElementById("cough").checked;
@@ -252,9 +248,6 @@
 			var j=document.getElementById("normal-temp").checked;
 			var k=document.getElementById("none1").checked;
 			var l=document.getElementById("none2").checked;
-
-
-
 			if(((a||b)&&(c&&f))||((a||b)&&(c&&g))||((a||b)&&(c&&h))||((a||b)&&(c&&i))||((a||b)&&(d&&f))||((a||b)&&(d&&g))||((a||b)&&(d&&h))||((a||b)&&(d&&i))||((a||b)&&(e&&f))||((a||b)&&(e&&g))||((a||b)&&(e&&h))||((a||b)&&(e&&i))){
 				document.getElementById("res").innerHTML="<b>Risk : High &nbsp; &nbsp; Corona Test : Highly Recommended</b>";
 			}

@@ -23,15 +23,12 @@
     .navbar-dark .navbar-nav .nav-link{
         color: white;
     }
-
     a.waves-effect, a.waves-light{
         display: inline;
     }
-
     .jumbotron.grocery{
         color: white;
     }
-
     .lead {
     font-size: 1.45rem;
     font-weight: 0;
@@ -40,9 +37,6 @@
 .container-fluid {
 padding: 60px 50px;
 }
-
-
-
 .slideanim {visibility:hidden;}
 .slide {
 animation-name: slide;
@@ -72,11 +66,10 @@ opacity: 1;
 }
 }
 
-
-
-
-
-
+p.Covid-info{
+font-family: 'Londrina Outline', cursive;
+font-size: 45px;
+}
 </style>
 
 
@@ -132,6 +125,7 @@ opacity: 1;
         <br><br><br><br><br><br>
         <center class="display-4" style="font-weight: 600; color:black; size: 20px">Welcome to our online Grocery Store</center> <br>
         <p class="lead two" style="font-family: 'Roboto Condensed', sans-serif; color: black; font-weight: bold; padding-left: 150px; padding-right: 150px ">Problem faced by people now is crowding of people in front of grocery stores while collecting orders. This leads to total disruption of the concept of social distancing. People can place online orders from home and come to the shop to directly collect their orders. Small shops and businesses can currently take their business online by signing up on our website. This will reduce the waiting time in long queues and also enforce social distancing.</p>
+
         <hr class="my-4">
         <p class="lead" style="margin-top: 20px; color: black; padding-left: 500px; font-weight: bold ">Stay indoors and stay healthy!</p> 
         <a style="position: relative;left: 570px "class="btn btn-success btn-lg" href="/order">Place Order</a>
@@ -140,10 +134,12 @@ opacity: 1;
       
     <div id="portfolio" class="container-fluid text-center" style="background-color: #ff810a">
         <h2 class="awareness"> <strong>Our Features</strong> </h2><br>
-        <div class="row text-center ">
+        <div class="row text-center slideanim">
           <div class="col-sm-4" style="margin-bottom: 20px;" >
             <div class="thumbnail">
-              <a href="/signup.ejs"><img class="img-fluid" src="/images/signup.PNG" style="height: 450px;"></a>
+
+              <a href="/signup"><img class="img-fluid" src="/images/signup.PNG" style="height: 450px;"></a>
+
             </div>
             <p style="padding-top: 25px; margin-bottom: 40px; font-size: 25px; color: black; font-weight: 500;">Sign Up</p>
           </div>
@@ -219,18 +215,17 @@ opacity: 1;
               
           
           
-           <div class="row bg-dark d-flex justify-content-center align-items-center" style=" color: white; height: 150px;">
-              <div class="col-xl-4">
-                  <center> <p class="Covid-info" style="margin-bottom: 0;font-weight: 500;"> Covid-Info   </p></center>	
-              </div>
-              <div class="col-xl-4">
-                  <center> <p> © Copyright HC, 2020. All rights reserved </p></center>
-              </div>
-              <div class="col-xl-4">
-                  <center> <p>Developed by : HyperText Coders/SAS </p></center>
-              </div>
+          <div class="row bg-dark d-flex justify-content-center align-items-center" style=" color: white; height: 150px;">
+            <div class="col-xl-4">
+              <center> <p class="Covid-info" style="margin-bottom: 0;font-weight: 500;"> Covid-Help   </p></center>	
+            </div>
+            <div class="col-xl-4">
+              <center> <p> © Copyright HC, 2020. All rights reserved </p></center>
+            </div>
+            <div class="col-xl-4">
+              <center> <p>Developed by : HyperText Coders/SAS </p></center>
+            </div>
           </div>
-              
 
 
 
@@ -255,8 +250,6 @@ opacity: 1;
 
 
           <script>
-
-
             $(document).ready(function(){   
                         $(window).scroll(function() {
                 $(".slideanim").each(function(){
@@ -268,8 +261,6 @@ opacity: 1;
                 });
             });
             });
-
-
           </script>
 
 
